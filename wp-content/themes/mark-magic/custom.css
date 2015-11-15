@@ -1,3 +1,36 @@
+/** accordian **/
+.om_theme .vc_tta.vc_tta-style-classic .vc_tta-panel-heading {
+    border: none;
+}
+.om_theme .vc_tta.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-title > a {
+    padding: 20px;
+    color: #000;
+}
+.om_theme .vc_tta.vc_tta-accordion .vc_tta-panel.vc_active .vc_tta-panel-title > a {
+    color: #000;
+}
+.om_theme .vc_tta.vc_tta-accordion .vc_tta-controls-icon-position-right .vc_tta-controls-icon {
+    position:absolute;
+    right: auto;
+    left: 20px;
+    top: 20px;
+    width: 28px;
+    height: 28px;
+    margin: 0;
+    background-image: url('img/accordion-plus.png');
+    transform: rotate(0deg);
+}
+.om_theme .vc_tta.vc_tta-accordion .vc_active .vc_tta-controls-icon-position-right .vc_tta-controls-icon {
+    background-image: url('img/accordion-minus.png');
+}
+.om_theme .vc_tta.vc_tta-accordion .vc_tta-controls-icon-position-right .vc_tta-controls-icon::before,
+.om_theme .vc_tta.vc_tta-accordion .vc_tta-controls-icon-position-right .vc_tta-controls-icon::before {
+    display: none;
+}
+.om_theme .vc_tta-title-text {
+    padding-left: 48px;
+}
+
 /** testimonials **/
 .wpb_wrapper .vc_om-testimonials-items {
     background-color: #FFF;
