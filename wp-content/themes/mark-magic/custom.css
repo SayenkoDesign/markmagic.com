@@ -2,7 +2,8 @@
     color: #FFF;
     text-decoration: none;
     font-size: 16px;
-    margin-right: 32px;
+    display: block;
+    margin-bottom: 16px;
 }
 #text-2 .textwidget a:hover {
     color: rgb(195, 146, 78);
@@ -21,4 +22,18 @@
     color: #FFF;
     font-weight: bold;
     text-decoration: none;
+}
+@media screen and (min-width: 400px) {
+    #text-2 .textwidget a {
+        width: 50%;
+        float: left;
+    }
+}
+@media screen and (min-width: 620px) {
+    #text-2 .textwidget a {
+        margin-right: 32px;
+        margin-bottom: 0;
+        display: inline;
+        float: none;
+    }
 }
