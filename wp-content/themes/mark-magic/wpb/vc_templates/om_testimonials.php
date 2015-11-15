@@ -57,13 +57,13 @@ if($my_query->have_posts()) {
 				if ( has_post_thumbnail() ) {
 					echo '<div class="om-item-pic">'. get_the_post_thumbnail() .'</div>';
 				}
-	
-				echo '<div class="om-item-text">';
-				the_content();
-				echo '</div>';
 
 				if($author)
 					echo '<div class="om-item-author">'.esc_html($author).'</div>';
+
+				echo '<div class="om-item-text">';
+				the_content();
+				echo '</div>';
 				
 				echo '<div class="clear"></div></div>';					
 				echo '</div>';

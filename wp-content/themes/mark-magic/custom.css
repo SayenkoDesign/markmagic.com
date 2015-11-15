@@ -1,3 +1,29 @@
+/** testimonials **/
+.wpb_wrapper .vc_om-testimonials-items {
+    background-color: #FFF;
+    color: #000;
+}
+.wpb_wrapper .vc_om-testimonials::after {
+    display:none;
+}
+.wpb_wrapper .vc_om-testimonials .om-item-pic {
+    margin: 32px 0;
+    float: none;
+    text-align: center;
+}
+.wpb_wrapper .vc_om-testimonials .om-item-pic img {
+    display: inline-block;
+}
+.wpb_wrapper .vc_om-testimonials .om-item-author::before {
+    display:none;
+}
+.wpb_wrapper .vc_om-testimonials .om-item-author {
+    font-style:normal;
+    text-align: center;
+    font-size: 16px;
+}
+
+/** footer **/
 #text-2 .textwidget a {
     color: #FFF;
     text-decoration: none;
