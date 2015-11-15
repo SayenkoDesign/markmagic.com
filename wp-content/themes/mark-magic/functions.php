@@ -225,6 +225,9 @@ add_filter('widget_text', 'do_shortcode');
 if(!function_exists('om_enqueue_scripts')) {
 	function om_enqueue_scripts() {
 
+		// custom style
+		wp_enqueue_style('custom', TEMPLATE_DIR_URI . '/custom.css');
+
 		// styles
 		wp_enqueue_style('om_style', get_stylesheet_uri(), array(), OM_THEME_VERSION);
 		if(get_option(OM_THEME_PREFIX . 'responsive') == 'true') {

@@ -1,0 +1,24 @@
+#text-2 .textwidget a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 32px;
+}
+#text-2 .textwidget a:hover {
+    color: rgb(195, 146, 78);
+}
+#text-2 .textwidget a i {
+    position: relative;
+    padding-right: 12px;
+    font-size: 20px;
+    top: 2px;
+}
+.sub-footer.with-sub-footer-text {
+    color: #d5d2d2;
+    font-family:Montserrat;
+}
+.sub-footer.with-sub-footer-text a {
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+}
