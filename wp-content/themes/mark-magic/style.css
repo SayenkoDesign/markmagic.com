@@ -1426,7 +1426,7 @@ body.uncovering-footer:after {
 }
 
 .page-title-wrapper.title-margins-xxlarge.title-align-center .container-inner {
-	padding:14vw 0 14vw;
+	padding:5vw 0 14vw;
 }
  
 .page-title-wrapper.tpl-color,
@@ -7447,7 +7447,7 @@ body.error404 .content-column-content {
 
 .gform_wrapper .top_label input.large, .gform_wrapper .top_label select.large, .gform_wrapper .top_label textarea.textarea {
     color: #ffffff;
-    font-family: Amatic SC;
+   
     font-size: 23px;
     height: 34px;
     width: 99.2%;
