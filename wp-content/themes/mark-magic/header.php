@@ -32,7 +32,7 @@
 									<div class="container-inner">
 										<?php if( $wpml_selector ) { ?><div class="header-wpml-selector"><?php do_action('icl_language_selector'); ?><div class="clear"></div></div><?php } ?>
 										<div class="header-tagline">
-											<?php echo wp_kses_post( $header_tagline ); ?>
+											<?php echo do_shortcode($header_tagline) ?>
 										</div>
 										<?php if($header_social_icons) { ?>
 											<div class="header-socials<?php echo esc_attr( ( $color = get_option( OM_THEME_PREFIX . 'social_icons_color_header') ) ? ' '.$color.'-social-icons':'' ) ?>">
