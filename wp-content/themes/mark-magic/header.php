@@ -105,6 +105,12 @@
 												<div class="container">
 													<div class="container-inner">
 														<div class="logo-menu-wrapper">
+															<div class="desktop-phone">
+																<a href="tel:19492753272">
+																	<span class="menu-line"></span>
+																	949-275-3272
+																</a>
+															</div>
 															<?php echo om_esc_wpcf($logo) ?>
 															<?php echo om_esc_wpcf($menu) ?>
 														</div>
@@ -153,7 +159,12 @@
 							<div class="container">
 								<div class="container-inner">
 									<div class="mobile-header-menu-wrapper">
-										<div class="mobile-header-menu-control"> <?php _e('Menu', 'om_theme') ?></div>
+										<div class="mobile-header-menu-control">
+											<a href="#" class="fa fa-bars"></a>
+										</div>
+										<div class="mobile-phone">
+											<a href="tel:19492753272" class="fa fa-phone"></a>
+										</div>
 										<div class="mobile-header-menu-container">
 											<?php
 													wp_nav_menu( array(

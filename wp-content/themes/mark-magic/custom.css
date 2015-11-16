@@ -1,3 +1,80 @@
+/** primary menu **/
+.desktop-phone {
+    display: none;
+}
+@media only screen and (min-width: 768px) {
+    .desktop-phone {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 28px;
+    }
+    .desktop-phone a {
+        color: #FFF;
+        font-size: 24px;
+        position: relative;
+    }
+    .desktop-phone a:hover {
+        color: #FFF;
+        text-decoration: none;
+    }
+    .desktop-phone a:hover span {
+        display: block;
+        width: 60%;
+        height: 2px;
+        background-color: #c3924e;
+        margin: 0 20%;
+        bottom: -2px;
+        position: absolute;
+    }
+    .logo-box {
+        clear: both;
+    }
+    .header-logo-menu .primary-menu > li > a {
+        font-size: 14px;
+    }
+    .header-logo-menu .primary-menu > li > a > span {
+        width: 60%;
+        margin: 12px auto;
+    }
+    .header-logo-menu .primary-menu > li:last-of-type {
+        margin-left: 20px;
+    }
+}
+
+/** mobile menu **/
+.header-layout-3 .mobile-header-menu-control a, .header-layout-3 .mobile-phone a {
+    color: #616161;
+}
+.header-layout-3 .mobile-header-menu-control a:hover, .header-layout-3 .mobile-phone a:hover {
+    text-decoration: none;
+}
+.header-layout-3 .mobile-header-menu-control {
+    display: inline-block;
+    float: right;
+    font-size: 48px;
+}
+.header-layout-3 .mobile-header-menu-control::before {
+    display: none;
+}
+.header-layout-3 .mobile-phone {
+    float: left;
+    font-size: 48px;
+}
+.header-layout-3 .mobile-header-menu-container {
+    clear: both;
+}
+.header-layout-3 #menu-main-menu-1 {
+    background-color: #f5f1df;
+    margin: 0 -20px -20px -20px;
+    text-align: center;
+}
+.header-layout-3 #menu-main-menu-1 li a {
+    font-size: 16px;
+    color: #313030 !important;
+    padding: 20px 0;
+}
+
 /** accordian **/
 .om_theme .vc_tta.vc_tta-style-classic .vc_tta-panel-heading {
     border: none;
