@@ -79,6 +79,17 @@
         bottom: -2px;
         position: absolute;
     }
+    .header-layout-3 .logo-type-image {
+        top: auto;
+        overflow: hidden;
+        height: auto;
+        width: auto;
+    }
+    .header-layout-3 .logo-image a img {
+        background-color: transparent;
+        padding: 0;
+        border-radius: 0px;
+    }
     .logo-box {
         clear: both;
     }
@@ -95,6 +106,23 @@
 }
 
 /** mobile menu **/
+.logo-type-image {
+    position: relative;
+    top: -30px;
+    z-index: 2;
+    overflow: visible;
+    height: 0;
+    width: 154px;
+    margin: 0 auto;
+}
+.logo-image {
+    display: inline-block;
+}
+.logo-image a img {
+    background-color: #FFF;
+    padding: 12px;
+    border-radius: 90px;
+}
 .header-layout-3 .mobile-header-menu-control a, .header-layout-3 .mobile-phone a {
     color: #616161;
 }
@@ -125,6 +153,14 @@
     font-size: 16px;
     color: #313030 !important;
     padding: 20px 0;
+}
+.header-layout-3 #menu-main-menu-1 {
+    padding-top: 75px
+}
+.header-layout-3 .header-mobile-menu {
+    position: relative;
+    z-index: 1;
+    padding: 4px;
 }
 
 /** accordian **/
