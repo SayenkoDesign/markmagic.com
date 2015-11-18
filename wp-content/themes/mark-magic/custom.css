@@ -7,14 +7,13 @@
 .header .header-tagline {
     margin: 14px 0;
     width: 100%;
+    text-align: left;
 }
 .header .header-tagline > p {
-    float: left;
     margin: 10px 0 0 0;
 }
 .header .header-tagline > div {
     margin: 0;
-    float: right;
 }
 #gform_3 .gform_heading {
     display: none;
@@ -22,14 +21,15 @@
 #gform_3 .gform_body, #gform_3 .gform_footer {
     float: left;
     clear: none;
+    margin: 8px 0;
+}
+#gform_3 .ginput_container {
+    margin: 0;
 }
 #gform_3 ::-webkit-input-placeholder { color:#989898; }
 #gform_3 :-moz-placeholder { opacity: 1; color:#989898; } /* Firefox 18- */
 #gform_3 ::-moz-placeholder { opacity: 1; color:#989898; } /* firefox 19+ */
 #gform_3 :-ms-input-placeholder { color:#989898; } /* ie */
-#gform_3 .ginput_container {
-    margin: 0 0 0 16px;
-}
 #gform_3 #input_3_1 {
     width: 312px;
     background-color: #FFF;
@@ -41,13 +41,29 @@
 #gform_3 .gform_footer {
     clear: none;
     padding: 0px;
-    margin: 0;
 }
 #gform_submit_button_3 {
     height: 100%;
     border: 2px solid #FFF;
     margin-left: 8px;
     text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+    .header .header-tagline > p {
+        float: left;
+        margin: 10px 0 0 0;
+    }
+    .header .header-tagline > div {
+        margin: 0;
+        float: right;
+    }
+    #gform_3 .gform_body, #gform_3 .gform_footer {
+        margin: 0;
+    }
+    #gform_3 .ginput_container {
+        margin: 0 0 0 16px;
+    }
 }
 
 /** primary menu **/
