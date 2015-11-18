@@ -303,6 +303,46 @@ input:-moz-placeholder { color:#FFF; }
     color: #000;
 }
 
+/** Lightbox/form **/
+#lightbox-form {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+#lightbox-form .wpb_row {
+    padding: 0;
+    margin: 0;
+}
+#lightbox-form .vc_col-sm-12 {
+    padding: 0 !important;
+}
+#lightbox-form .gform_wrapper {
+    width: 100%;
+    max-width: none;
+}
+#fancybox-wrap #lightbox-form {
+    display: block;
+}
+#fancybox-wrap {
+    width: 80% !important;
+    max-width: 600px !important;
+    left: 50% !important;
+    right: auto !important;
+    top: 10% !important;
+    transform: translate(-50%, 0);
+}
+#fancybox-content {
+    width: 100% !important;
+    background-color: #c3924e !important;
+    border-color: #c3924e !important;
+    border-width: 0 !important;
+    padding: 20px !important;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+}
+#fancybox-content .vc_row
+
 /** footer **/
 #text-2 .textwidget a {
     color: #FFF;

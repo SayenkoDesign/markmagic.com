@@ -8,6 +8,16 @@ define('TEMPLATE_DIR', get_template_directory()); // without the trailing slash
 define('TEMPLATE_DIR_URI', get_template_directory_uri()); // without trailing slash, in the event a child theme is being used, the parent theme directory URI will be returned
 define('OM_THEME_VERSION', '1.0.4');
 
+add_filter( 'nav_menu_link_attributes', 'om_add_prettyphoto_attribute', 10, 3 );
+
+function om_add_prettyphoto_attribute( $atts, $item, $args ) {
+	if(preg_match('/^#*/', $atts['href'])) {
+		$atts['class'] = 'fancybox';
+	}
+	// Manipulate attributes
+	return $atts;
+}
+
 /*************************************************************************************
  *	WordPress version control
  *************************************************************************************/
