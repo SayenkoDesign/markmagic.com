@@ -11,7 +11,7 @@ define('OM_THEME_VERSION', '1.0.4');
 add_filter( 'nav_menu_link_attributes', 'om_add_prettyphoto_attribute', 10, 3 );
 
 function om_add_prettyphoto_attribute( $atts, $item, $args ) {
-	if(preg_match('/^#*/', $atts['href'])) {
+	if(preg_match('/#/', $atts['href'])) {
 		$atts['class'] = 'fancybox';
 	}
 	// Manipulate attributes

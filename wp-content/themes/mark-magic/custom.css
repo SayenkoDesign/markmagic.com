@@ -272,6 +272,11 @@
 ::-moz-placeholder { opacity: 1; color:#FFF; } /* firefox 19+ */
 :-ms-input-placeholder { color:#FFF; } /* ie */
 input:-moz-placeholder { color:#FFF; }
+
+#why .vc_row > .vc_col-sm-6:last-of-type {
+    color: #FFF;
+}
+
 #gform_2 .gfield_label,
 #gform_1 .gfield_label {
     display: none;
@@ -406,6 +411,7 @@ input:-moz-placeholder { color:#FFF; }
     transform: translate(-50%, 0);
 }
 #fancybox-content {
+    color: #FFF;
     width: 100% !important;
     background-color: #c3924e !important;
     border-color: #c3924e !important;
