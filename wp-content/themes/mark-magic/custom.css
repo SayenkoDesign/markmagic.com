@@ -1,13 +1,27 @@
 /** top bar **/
+#wpadminbar {
+    position: fixed;
+}
 .header .header-top {
     background-color: rgb(195, 146, 78);
     color: #FFF;
     font-size: 16px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0px;
+}
+.logged-in .header .header-top {
+    top: 32px;
+}
+.header .logo-type-image {
+    margin-top: 87px;
 }
 .header .header-tagline {
     margin: 14px 0;
     width: 100%;
     text-align: left;
+
 }
 .header .header-tagline > p {
     margin: 10px 0 0 0;
@@ -50,6 +64,9 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .header .logo-type-image {
+        margin-top: 72px;
+    }
     .header .header-tagline > p {
         float: left;
         margin: 10px 0 0 0;
