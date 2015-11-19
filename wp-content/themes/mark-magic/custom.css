@@ -202,6 +202,11 @@
     background-color: #FFF;
 }
 
+/** Layout **/
+.container-wrapper .content {
+    padding-bottom: 0;
+}
+
 /** accordian **/
 .om_theme .vc_tta.vc_tta-style-classic .vc_tta-panel-heading {
     border: none;
