@@ -211,7 +211,28 @@
 .container-wrapper .content {
     padding-bottom: 0;
 }
-
+#cards, #coin {
+    display: none;
+}
+@media screen and (min-width: 620px) {
+    #cards {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        overflow: visible;
+        right: 0;
+    }
+    #cards img {
+        margin-top: -100px;
+    }
+    #coin {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        overflow: visible;
+        left: 0;
+    }
+}
 /** accordian **/
 .om_theme .vc_tta.vc_tta-style-classic .vc_tta-panel-heading {
     border: none;
