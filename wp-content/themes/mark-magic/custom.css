@@ -245,65 +245,85 @@
     padding-left: 48px;
 }
 
-/** contact form **/
-#gform_wrapper_2 #gform_2 {
+/** contact forms **/
+::-webkit-input-placeholder { color:#FFF; }
+:-moz-placeholder { opacity: 1; color:#FFF; } /* Firefox 18- */
+::-moz-placeholder { opacity: 1; color:#FFF; } /* firefox 19+ */
+:-ms-input-placeholder { color:#FFF; } /* ie */
+input:-moz-placeholder { color:#FFF; }
+#gform_2 .gfield_label,
+#gform_1 .gfield_label {
+    display: none;
+}
+#gform_wrapper_2 #gform_2,
+#gform_wrapper_1 #gform_1 {
     color: #FFF;
 }
-#gform_wrapper_2 #gform_2 li {
+#gform_wrapper_2 #gform_2 li,
+#gform_wrapper_1 #gform_1 li{
     margin-bottom: 48px;
 }
-#gform_wrapper_2 .top_label li.gfield.gf_left_half {
+#gform_wrapper_2 .top_label li.gfield.gf_left_half,
+#gform_wrapper_1 .top_label li.gfield.gf_left_half {
     width: 46%;
     margin-right: 8%;
 }
-#gform_wrapper_2 .top_label li.gfield.gf_right_half {
+#gform_wrapper_2 .top_label li.gfield.gf_right_half,
+#gform_wrapper_1 .top_label li.gfield.gf_right_half {
     width: 46%;
 }
-#gform_wrapper_2 #gform_2 .gform_heading {
+#gform_wrapper_2 #gform_2 .gform_heading,
+#gform_wrapper_1 #gform_1 .gform_heading{
     margin-bottom: 128px;
 }
-#gform_wrapper_2 #gform_2 .gfield_required {
+#gform_wrapper_2 #gform_2 .gfield_required,
+#gform_wrapper_1 #gform_1 .gfield_required{
     color: #FFF;
     padding-left: 8px;
 }
-#gform_wrapper_2 #gform_2 input, #gform_wrapper_2 #input_2_5 {
+#gform_wrapper_2 #gform_2 input, #gform_wrapper_2 #input_2_5,
+#gform_wrapper_1 #gform_1 input, #gform_wrapper_1 #input_1_5 {
     border: none;
 }
-#gform_wrapper_2 #input_2_5 {
+#gform_wrapper_2 #input_2_5,
+#gform_wrapper_1 #input_1_5{
     height: 96px;
 }
 #field_2_2 input, #field_2_3 input, #field_2_4 input,
-#field_2_5 textarea, #field_2_6 input, #field_2_7 input {
+#field_2_5 textarea, #field_2_6 input, #field_2_7 input,
+#field_1_2 input, #field_1_3 input, #field_1_4 input,
+#field_1_5 textarea, #field_1_7 input, #field_1_10 input{
     padding-left: 20px;
     box-sizing: border-box;
     font-size: 12px;
     color: #FFF;
 }
 #field_2_2::after, #field_2_3::after, #field_2_4::after,
-#field_2_5::after, #field_2_6::after, #field_2_7::after {
+#field_2_5::after, #field_2_6::after, #field_2_7::after,
+#field_1_2::after, #field_1_3::after, #field_1_4::after,
+#field_1_5::after, #field_1_7::after, #field_1_10::after{
     content: "";
     display: block;
     height: 12px;
     border: 1px solid #FFF;
     border-top: none;
 }
-::-webkit-input-placeholder { color:#FFF; }
-:-moz-placeholder { opacity: 1; color:#FFF; } /* Firefox 18- */
-::-moz-placeholder { opacity: 1; color:#FFF; } /* firefox 19+ */
-:-ms-input-placeholder { color:#FFF; } /* ie */
-input:-moz-placeholder { color:#FFF; }
-#input_2_8 input {
+#input_2_8 input,
+#input_1_9 input{
     margin-top: 4px;
 }
-#gform_wrapper_2 #input_2_8 label {
+#gform_wrapper_2 #input_2_8 label,
+#gform_wrapper_1 #input_1_9 label {
     margin-left: 8px;
 }
-#gform_wrapper_2 #gform_2 .gform_footer {
+#gform_wrapper_2 #gform_2 .gform_footer,
+#gform_wrapper_1 #gform_1 .gform_footer{
     text-align: left;
     padding: 0;
     margin: 0;
 }
-#gform_submit_button_2 {
+#gform_submit_button_2,
+#gform_submit_button_1 {
     background-color: rgb(173, 125, 59);
     font-size: 12px;
     padding: 16px 32px;
@@ -336,7 +356,7 @@ input:-moz-placeholder { color:#FFF; }
     color: #000;
 }
 
-/** Lightbox/form **/
+/** Lightbox **/
 #lightbox-form {
     display: none;
     padding: 0;
