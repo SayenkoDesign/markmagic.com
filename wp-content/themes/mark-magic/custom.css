@@ -201,6 +201,11 @@
     padding: 70px;
     background-color: #FFF;
 }
+#events > .wpb_column:last-of-type .vc_btn3 {
+    color: #000;
+    background-color: #FFF;
+    border: 1px solid #686868;
+}
 
 /** Layout **/
 .container-wrapper .content {
