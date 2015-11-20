@@ -92,6 +92,22 @@ jQuery(function($){
 		$('#events > .wpb_column > .wpb_wrapper').each(function() {
 			$(this).innerHeight(event_height);
 		});
+
+		//testimonials
+		var event_height = 0;
+		$('#testimonials .vc_om-testimonials-items').each(function() {
+			$(this).innerHeight("auto");
+			var h = $(this).innerHeight();
+			console.log('h: ' + h);
+			if(h > event_height) {
+				event_height = h;
+			}
+			console.log('current event_height: ' + event_height);
+		});
+		console.log('final event_height: ' + event_height);
+		$('#testimonials .vc_om-testimonials-items').each(function() {
+			$(this).innerHeight(event_height);
+		});
 	});
 
 	/***********************************/
