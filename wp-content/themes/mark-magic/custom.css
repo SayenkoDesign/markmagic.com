@@ -519,6 +519,10 @@ input:-moz-placeholder { color:#FFF; }
     width: 100%;
     max-width: none;
 }
+#fancybox-overlay {
+    opacity: 0.9 !important;
+    background-color: rgb(255, 255, 255) !important;
+}
 #fancybox-wrap #lightbox-form {
     display: block;
 }
