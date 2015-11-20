@@ -244,6 +244,78 @@
     padding: 4px;
 }
 
+/** slider **/
+/**
+ * Doing mobile last since the desktop styles are done inline via revolution slider
+ *
+ * using nth-child because setting IDs/classes in revolution slider applies to the
+ * content and not the container that has the positioning
+ */
+#caption-4 {
+    display: none;
+}
+.tp-parallax-wrap {
+    left: 55% !important;
+}
+.tp-parallax-wrap:nth-child(2) {
+    top: 41% !important;
+}
+.tp-parallax-wrap:nth-child(3) {
+    top: 44% !important;
+}
+.tp-parallax-wrap:nth-child(5), .tp-parallax-wrap:nth-child(6) {
+    top: 58% !important;
+}
+.tp-parallax-wrap:last-of-type {
+    left: calc(55% + 166px) !important;
+}
+@media only screen and (max-width: 1050px) {
+    #slide-1-layer-1 {
+        font-size: 14px !important;
+    }
+    #slide-1-layer-2 {
+        font-size: 32px !important;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .tp-parallax-wrap {
+        left: calc(50% - 180px) !important;
+    }
+    .tp-parallax-wrap:last-of-type {
+        left: calc(50% - 180px + 166px) !important;
+    }
+    #rev_slider_1_1_wrapper .slotholder::after {
+        content: " ";
+        position: absolute;
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        background-color: rgba(0,0,0,0.6);
+        z-index: 19;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .tp-parallax-wrap:nth-child(5), .tp-parallax-wrap:nth-child(6) {
+        top: 68% !important;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .tp-parallax-wrap {
+        left: calc(50% - 122px) !important;
+    }
+    #slide-1-layer-1 {
+        display: none;
+    }
+    #slide-1-layer-2 {
+        font-size: 20px !important;
+    }
+    #slide-1-layer-12, #why-mark {
+        font-size: 12px !important;
+        padding: 6px 16px !important;;
+    }
+}
+
 /** Services **/
 #events .wpb_column > .wpb_wrapper, #events .wpb_column > .wpb_wrapper {
     padding: 70px;
