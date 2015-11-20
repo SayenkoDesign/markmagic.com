@@ -341,6 +341,9 @@
 #cards, #coin {
     display: none;
 }
+#partner-logos .vc_col-xs-6:nth-child(2n+1) {
+    clear:left;
+}
 @media screen and (min-width: 620px) {
     #cards {
         display: block;
@@ -358,6 +361,11 @@
         z-index: 2;
         overflow: visible;
         left: 0;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #partner-logos .vc_col-xs-6:nth-child(2n+1) {
+        clear: none;
     }
 }
 /** accordian **/
