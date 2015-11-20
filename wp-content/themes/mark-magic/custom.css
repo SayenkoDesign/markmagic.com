@@ -328,6 +328,13 @@
 }
 
 /** Layout **/
+.home .content {
+    background-color: #ECECEC;
+}
+#how, #icon-hover, #services {
+    position: relative;
+    z-index: 3;
+}
 .container-wrapper .content {
     padding-bottom: 0;
 }
