@@ -368,6 +368,12 @@
 #cards, #coin {
     display: none;
 }
+#cards .wpb_row, #coin .wpb_row {
+    margin: 0;
+}
+#cards .vc_col-sm-12, #coin .vc_col-sm-12 {
+    padding: 0px !important;
+}
 #partner-logos .vc_col-xs-6:nth-child(2n+1) {
     clear:left;
 }
