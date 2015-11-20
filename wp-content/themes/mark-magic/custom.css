@@ -32,9 +32,13 @@
 #gform_3 .gform_heading {
     display: none;
 }
+#gform_3 .gform_body {
+    width: 100%;
+}
+#gform_3 .gform_footer {
+    width: 100%;
+}
 #gform_3 .gform_body, #gform_3 .gform_footer {
-    float: left;
-    clear: none;
     margin: 8px 0;
 }
 #gform_3 .ginput_container {
@@ -45,7 +49,7 @@
 #gform_3 ::-moz-placeholder { opacity: 1; color:#989898; } /* firefox 19+ */
 #gform_3 :-ms-input-placeholder { color:#989898; } /* ie */
 #gform_3 #input_3_1 {
-    width: 312px;
+    width: 100%;
     background-color: #FFF;
     border: none;
     padding: 14px 28px;
@@ -59,13 +63,39 @@
 #gform_submit_button_3 {
     height: 100%;
     border: 2px solid #FFF;
-    margin-left: 8px;
     text-transform: uppercase;
+    margin-left: 0px;
+    width: 100%;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 400px) {
+    .header .header-tagline {
+        text-align: center;
+    }
+    #gform_3 {
+        display: inline-block;
+    }
+    #gform_3 .gform_body {
+        width: 60%;
+    }
+    #gform_3 .gform_footer {
+        width: auto;
+    }
+    #gform_3 .gform_body, #gform_3 .gform_footer {
+        float: left;
+        clear: none;
+    }
+    #gform_submit_button_3 {
+        margin-left: 8px;
+        width: auto;
+    }
+}
+@media only screen and (min-width: 900px) {
     .header .logo-type-image {
         margin-top: 72px;
+    }
+    .header .header-tagline {
+        text-align: left;
     }
     .header .header-tagline > p {
         float: left;
@@ -75,11 +105,29 @@
         margin: 0;
         float: right;
     }
-    #gform_3 .gform_body, #gform_3 .gform_footer {
-        margin: 0;
+    #gform_3 {
+        display: block;
+    }
+    #gform_3 .gform_body {
+        width: auto;
     }
     #gform_3 .ginput_container {
         margin: 0 0 0 16px;
+    }
+    #gform_3 .gform_body, #gform_3 .gform_footer {
+        margin: 0;
+    }
+    #gform_3 #input_3_1 {
+        width: 256px;
+    }
+    #gform_submit_button_3 {
+        margin-left: 8px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #gform_3 #input_3_1 {
+        width: 312px;
     }
 }
 
