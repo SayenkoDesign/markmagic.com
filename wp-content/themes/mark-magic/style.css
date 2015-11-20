@@ -5415,7 +5415,7 @@ div.wpb_heading {
 }
 
 .om_theme .vc_tta.vc_general .vc_tta-panel-title {
-	font-size:100%;
+	font-size:140%;
 	line-height:inherit;
 }
 
@@ -5518,6 +5518,11 @@ div.wpb_heading {
 }
 
 /* button */
+
+.om_theme .vc_btn3.vc_btn3-size-lg {
+    padding: 0.7em 1.8em !important;
+    font-size: 117% !important;
+}
 
 .om_theme .vc_btn3-container,
 .om_theme .vc_general.vc_btn3 {
@@ -5762,14 +5767,11 @@ div.wpb_heading {
 
 
 .om_theme .vc_btn3.vc_btn3-size-xlg {
-  padding: 0.5em 0.9em !important;
+  padding: 0.7em 1.9em !important;
   font-size: 135% !important;
 }
 
-.om_theme .vc_btn3.vc_btn3-size-lg {
-  padding: 0.4em 0.8em !important;
-  font-size: 115% !important;
-}
+
 .om_theme .vc_btn3.vc_btn3-size-md {
   padding: 0.3em 0.7em !important;
   font-size: 100% !important;
@@ -7443,6 +7445,11 @@ body.error404 .content-column-content {
 #gform_3 label {
     display: none;
 }
+
+#field_1_9 label {
+    display: inline !important;
+}
+
 
 
 .gform_wrapper .top_label input.large, .gform_wrapper .top_label select.large, .gform_wrapper .top_label textarea.textarea {
