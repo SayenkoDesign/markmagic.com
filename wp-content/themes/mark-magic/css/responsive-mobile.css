@@ -1,4 +1,4 @@
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1049px) {
 	
 	body {
 		min-width:320px;
@@ -31,6 +31,9 @@
 		float:none;
 		margin:1em 0;
 		text-align:center;
+	}
+	.header-tagline {
+		float: left;
 	}
 	
 	

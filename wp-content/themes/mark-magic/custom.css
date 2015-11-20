@@ -135,7 +135,10 @@
 .desktop-phone {
     display: none;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1050px) {
+    .logo-menu-wrapper .logo-box {
+        padding-right: 0;
+    }
     .desktop-phone {
         display: block;
         position: absolute;
