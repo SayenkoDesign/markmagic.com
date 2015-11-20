@@ -69,7 +69,31 @@ jQuery(function($){
 	portfolio_init();	
 	
 	uncovering_footer_init();
-	
+
+	/***********************************/
+	$(window).resize(function() {
+		var breakpoint = 768;
+		if($(window).innerWidth() < breakpoint) {
+			return;
+		}
+
+		//events
+		var event_height = 0;
+		$('#events > .wpb_column > .wpb_wrapper').each(function() {
+			$(this).innerHeight("auto");
+			var h = $(this).innerHeight();
+			console.log('h: ' + h);
+			if(h > event_height) {
+				event_height = h;
+			}
+			console.log('current event_height: ' + event_height);
+		});
+		console.log('final event_height: ' + event_height);
+		$('#events > .wpb_column > .wpb_wrapper').each(function() {
+			$(this).innerHeight(event_height);
+		});
+	});
+
 	/***********************************/
 
 	function browser_detect() {
