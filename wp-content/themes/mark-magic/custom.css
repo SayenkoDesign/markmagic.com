@@ -429,6 +429,9 @@ body {
 #partner-logos .vc_col-xs-6:nth-child(2n+1) {
     clear:left;
 }
+#get-started .wpb_content_element {
+    margin-top: 0;
+}
 @media screen and (min-width: 620px) {
     #cards {
         display: block;
@@ -650,6 +653,7 @@ input:-moz-placeholder { color:#FFF; }
 #fancybox-overlay {
     opacity: 0.9 !important;
     background-color: rgb(255, 255, 255) !important;
+    position: fixed !important;
 }
 #fancybox-wrap #lightbox-form {
     display: block;
@@ -659,7 +663,6 @@ input:-moz-placeholder { color:#FFF; }
     max-width: 800px !important;
     left: 50% !important;
     right: auto !important;
-    top: 10% !important;
     transform: translate(-50%, 0);
 }
 #fancybox-content {
