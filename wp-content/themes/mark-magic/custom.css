@@ -151,6 +151,22 @@
 .desktop-phone {
     display: none;
 }
+.menu-item-20 {
+    display: none;
+}
+.header-layout-3 #menu-main-menu-1 .menu-item-67 {
+    margin-top: 25px;
+}
+.header-layout-3 #menu-main-menu-1 .menu-item-67 a {
+    background-color: #c3924e;
+    color: #fff !important;
+    padding: 20px;
+    display:inline-block;
+    margin: 0 auto;
+}
+.logo-menu-wrapper .logo-box {
+    padding-bottom: 0;
+}
 @media only screen and (min-width: 1050px) {
     .logo-menu-wrapper .logo-box {
         padding-right: 0;
@@ -193,6 +209,9 @@
     .logo-box {
         clear: both;
     }
+    #menu-item-67 {
+        display: none;
+    }
     .header-logo-menu .primary-menu > li > a {
         font-size: 14px;
     }
@@ -200,8 +219,12 @@
         width: 60%;
         margin: 12px auto;
     }
-    .header-logo-menu .primary-menu > li:last-of-type {
+    #menu-item-20 {
+        display: block;
         margin-left: 20px;
+    }
+    .logo-menu-wrapper .logo-box {
+        padding-bottom: 30px;
     }
 }
 
