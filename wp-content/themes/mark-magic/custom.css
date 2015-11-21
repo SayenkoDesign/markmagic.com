@@ -269,7 +269,7 @@
 }
 .header-layout-3 #menu-main-menu-1 {
     background-color: #f5f1df;
-    margin: 0 -20px -20px -20px;
+    margin: 0 -24px 0 -24px;
     text-align: center;
 }
 .header-layout-3 #menu-main-menu-1 li a {
@@ -286,7 +286,9 @@
     padding: 4px;
     top: 84px;
 }
-
+#menu-main-menu-1 {
+    text-transform: uppercase;
+}
 
 @media only screen and (min-width: 400px) {
     .logo-type-image {
