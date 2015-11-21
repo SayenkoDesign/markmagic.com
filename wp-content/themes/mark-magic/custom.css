@@ -304,6 +304,11 @@
         font-size: 32px !important;
     }
 }
+@media only screen and (max-width: 899px) {
+    .header-slider {
+        margin-top: 45px;
+    }
+}
 @media only screen and (max-width: 850px) {
     .tp-parallax-wrap {
         left: calc(50% - 180px) !important;
@@ -340,6 +345,11 @@
     #slide-1-layer-12, #why-mark {
         font-size: 12px !important;
         padding: 6px 16px !important;;
+    }
+}
+@media only screen and (max-width: 399px) {
+    .header-slider {
+        margin-top: 100px;
     }
 }
 
