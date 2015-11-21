@@ -79,8 +79,11 @@ jQuery(function($){
 	$(window).resize(function() {
 		var breakpoint = 768;
 		if($(window).innerWidth() < breakpoint) {
+			unset_equal_events();
+			unset_equal_testimonials();
 			return;
 		}
+
 		equal_events();
 		equal_testimonials();
 	});
@@ -115,6 +118,14 @@ jQuery(function($){
 		$('#testimonials .vc_om-testimonials-items').each(function() {
 			$(this).innerHeight(event_height);
 		});
+	}
+
+	function unset_equal_events() {
+		$('#events > .wpb_column > .wpb_wrapper').innerHeight("auto");
+	}
+
+	function unset_equal_testimonials() {
+		$('#testimonials .vc_om-testimonials-items').innerHeight("auto");
 	}
 
 	/***********************************/
