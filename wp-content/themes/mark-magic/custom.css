@@ -571,10 +571,28 @@ input:-moz-placeholder { color:#FFF; }
 }
 
 /** Lightbox **/
+#fancybox-outer #fancybox-close {
+    top: 25px;
+    right: 25px;
+}
+#fancybox-outer #fancybox-close {
+    background: none;
+    line-height: 1;
+}
+#fancybox-outer #fancybox-close:hover {
+    text-decoration: none;
+}
+#fancybox-outer #fancybox-close::before {
+    font-size: 32px;
+    color: #FFF;
+    font-family: FontAwesome;
+    content: "\f00d";
+}
 #lightbox-form {
     display: none;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 #lightbox-form .wpb_row {
     padding: 0;
@@ -596,7 +614,7 @@ input:-moz-placeholder { color:#FFF; }
 }
 #fancybox-wrap {
     width: 80% !important;
-    max-width: 600px !important;
+    max-width: 800px !important;
     left: 50% !important;
     right: auto !important;
     top: 10% !important;
@@ -608,12 +626,11 @@ input:-moz-placeholder { color:#FFF; }
     background-color: #c3924e !important;
     border-color: #c3924e !important;
     border-width: 0 !important;
-    padding: 20px !important;
+    padding: 80px !important;
     -webkit-box-sizing: border-box !important;
     -moz-box-sizing: border-box !important;
     box-sizing: border-box !important;
 }
-#fancybox-content .vc_row
 
 /** footer **/
 #text-2 .textwidget a {
