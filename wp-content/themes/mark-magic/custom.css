@@ -20,6 +20,10 @@
 .header .logo-type-image {
     margin-top: 87px;
 }
+.header .logo-type-image .logo-menu-wrapper img {
+    position: relative;
+    left: -20px;
+}
 .header .header-tagline {
     margin: 14px 0;
     width: 100%;
