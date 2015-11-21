@@ -14,14 +14,16 @@
 .logged-in .header .header-top {
     top: 32px;
 }
+.header .header-top {
+    font-size: 10px;
+}
 .header .logo-type-image {
     margin-top: 87px;
 }
 .header .header-tagline {
     margin: 14px 0;
     width: 100%;
-    text-align: left;
-
+    text-align: center;
 }
 .header .header-tagline > p {
     margin: 10px 0 0 0;
@@ -33,13 +35,15 @@
     display: none;
 }
 #gform_3 .gform_body {
-    width: 100%;
+    width: 60%;
 }
 #gform_3 .gform_footer {
-    width: 100%;
+    width: 40%;
 }
 #gform_3 .gform_body, #gform_3 .gform_footer {
     margin: 8px 0;
+    float: left;
+    clear: none;
 }
 #gform_3 .ginput_container {
     margin: 0;
@@ -52,9 +56,9 @@
     width: 100%;
     background-color: #FFF;
     border: none;
-    padding: 14px 28px;
+    padding: 7px;
     box-sizing: border-box;
-    font-size: 12px;
+    font-size: 10px;
 }
 #gform_3 .gform_footer {
     clear: none;
@@ -62,37 +66,37 @@
 }
 #gform_submit_button_3 {
     height: 100%;
-    border: 2px solid #FFF;
+    border: 1px solid #FFF;
     text-transform: uppercase;
     margin-left: 0px;
     width: 100%;
+    font-size: 10px;
 }
 
 @media only screen and (min-width: 400px) {
-    .header .header-tagline {
-        text-align: center;
+    .header .header-top {
+        font-size: 12px;
     }
     #gform_3 {
         display: inline-block;
     }
-    #gform_3 .gform_body {
-        width: 60%;
+    #gform_3 #input_3_1 {
+        padding: 14px 28px;
+        font-size: 12px;
     }
     #gform_3 .gform_footer {
         width: auto;
     }
-    #gform_3 .gform_body, #gform_3 .gform_footer {
-        float: left;
-        clear: none;
-    }
     #gform_submit_button_3 {
         margin-left: 8px;
         width: auto;
+        border-width: 2px;
+        font-size: 1em;
     }
 }
-@media only screen and (min-width: 400px) and (max-width:500px) {
+@media only screen and (min-width:501px) {
     .header .header-top {
-        font-size: 12px;
+        font-size: 16px;
     }
 }
 @media only screen and (min-width: 900px) {
