@@ -130,6 +130,12 @@ jQuery(function($){
 
 	/***********************************/
 
+	$('#icon-hover .wpb_single_image').click(function(){
+		$(this).prev('.wpb_text_column').stop(true, true).slideToggle();
+	});
+
+	/***********************************/
+
 	function browser_detect() {
 		
 		var matched, browser;
