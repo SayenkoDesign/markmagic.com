@@ -716,7 +716,7 @@ input:-moz-placeholder { color:#FFF; }
     display: block;
 }
 #fancybox-wrap {
-    width: 80% !important;
+    width: 90% !important;
     max-width: 800px !important;
     left: 50% !important;
     right: auto !important;
@@ -728,10 +728,19 @@ input:-moz-placeholder { color:#FFF; }
     background-color: #c3924e !important;
     border-color: #c3924e !important;
     border-width: 0 !important;
-    padding: 80px !important;
+    padding: 40px !important;
     -webkit-box-sizing: border-box !important;
     -moz-box-sizing: border-box !important;
     box-sizing: border-box !important;
+}
+@media screen and (min-width: 768px) {
+    #fancybox-wrap {
+        width: 80% !important;
+    }
+
+    #fancybox-content {
+        padding: 80px !important;
+    }
 }
 
 /** footer **/
