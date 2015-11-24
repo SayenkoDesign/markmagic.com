@@ -15,7 +15,10 @@
     top: 32px;
 }
 .header .header-top {
-    font-size: 10px;
+    font-size: 12px;
+}
+.header .container-inner {
+    margin: 0 15px;
 }
 .header .logo-type-image {
     margin-top: 0;
@@ -25,12 +28,12 @@
     left: -20px;
 }
 .header .header-tagline {
-    margin: 14px 0;
+    margin: 8px 0;
     width: 100%;
     text-align: center;
 }
 .header .header-tagline > p {
-    margin: 10px 0 0 0;
+    margin: 8px 0 0 0;
 }
 .header .header-tagline > div {
     margin: 0;
@@ -86,10 +89,16 @@
 
 @media only screen and (min-width: 400px) {
     .header .header-top {
-        font-size: 12px;
+        font-size: 14px;
+    }
+    .header .container-inner {
+        margin: 0 30px;
     }
     .header .logo-type-image {
         margin-top: 87px;
+    }
+    .header .header-tagline {
+        margin: 14px 0;
     }
     #gform_3 {
         display: inline-block;
