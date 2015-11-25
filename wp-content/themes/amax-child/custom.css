@@ -416,6 +416,14 @@
     }
 }
 
+/** hero images **/
+.page-title-wrapper.title-margins-xxlarge.title-align-center .container-inner {
+    padding: 5vw 0 14vw !important;
+}
+.page-title-wrapper.title-margins-xxlarge .container-inner {
+    padding: 16vw 0 3vw !important;
+}
+
 /** icon hover **/
 #icon-hover .wpb_text_column:nth-child(1) {
     display: none;
