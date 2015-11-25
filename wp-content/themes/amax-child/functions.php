@@ -74,3 +74,11 @@ Simply introduce us via email along with the prospects phone number. Email intro
 <a href='mailto:mike@sayenkodesign.com'>mike@sayenkodesign.com</a>
 HTML;
 }
+
+/**
+ * Hide amax theme
+ */
+add_filter('wp_prepare_themes_for_js',function ($themes) {
+    unset($themes['amax']);
+    return $themes;
+});
