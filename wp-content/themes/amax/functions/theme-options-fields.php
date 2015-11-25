@@ -1183,27 +1183,27 @@ if (!function_exists('om_get_options_template')) {
 		}
 		
 		////////////////////////////////////////////////////////////
-
-
-		$options[] = array( "name" => __('Theme updates','om_theme'),
-		                    "type" => "heading");
-
-		$options[] = array( "name" => "",
-								"message" => __('If you want to receive notifications about new Theme versions in WordPress Dashboard, please, specify your ThemeForest(Envato) username and API key below.','om_theme'),
-								"type" => "note");		                    
-								
-		$options[] = array( 'name' => __('Your ThemeForest(Envato) username', 'om_theme'),
-		                    'desc' => '',
-		                    'id' =>  OM_THEME_PREFIX . 'envato_username',
-		                    'std' => '',
-		                    'type' => 'text');
-		                    
-		$options[] = array( 'name' => __('Your ThemeForest(Envato) API key', 'om_theme'),
-		                    'desc' => '',
-		                    'id' =>  OM_THEME_PREFIX . 'envato_api',
-		                    'std' => '',
-		                    'type' => 'text');
-					
+//
+//
+//		$options[] = array( "name" => __('Theme updates','om_theme'),
+//		                    "type" => "heading");
+//
+//		$options[] = array( "name" => "",
+//								"message" => __('If you want to receive notifications about new Theme versions in WordPress Dashboard, please, specify your ThemeForest(Envato) username and API key below.','om_theme'),
+//								"type" => "note");
+//
+//		$options[] = array( 'name' => __('Your ThemeForest(Envato) username', 'om_theme'),
+//		                    'desc' => '',
+//		                    'id' =>  OM_THEME_PREFIX . 'envato_username',
+//		                    'std' => '',
+//		                    'type' => 'text');
+//
+//		$options[] = array( 'name' => __('Your ThemeForest(Envato) API key', 'om_theme'),
+//		                    'desc' => '',
+//		                    'id' =>  OM_THEME_PREFIX . 'envato_api',
+//		                    'std' => '',
+//		                    'type' => 'text');
+//
 		////////////////////////////////////////////////////////////
 
 
