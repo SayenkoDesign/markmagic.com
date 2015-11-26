@@ -132,7 +132,7 @@
 }
 @media only screen and (min-width: 900px) {
     .header .logo-type-image {
-        margin-top: 72px;
+        margin-top: 65px;
     }
     .header .header-tagline {
         text-align: left;
@@ -142,7 +142,7 @@
         margin: 10px 0 0 0;
     }
     .header .header-tagline > div {
-        margin: 0;
+        margin: 0 0 8px 0;
         float: right;
     }
     #gform_3 {
@@ -168,6 +168,12 @@
 @media only screen and (min-width: 1024px) {
     #gform_3 #input_3_1 {
         width: 312px;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .custom-header-bg-merge-title .header .logo-type-image {
+        margin-top: -15px;
     }
 }
 
@@ -316,10 +322,10 @@
 
 @media only screen and (min-width: 400px) {
     .logo-type-image {
-        top: 15px;
+        top: 5px;
     }
     .header-layout-3 .header-mobile-menu {
-        top: 45px;
+        top: 35px;
     }
 }
 @media only screen and (min-width: 900px) {
@@ -331,12 +337,15 @@
     }
 }
 
-/** slider **/
+/** slider/hero images **/
 /**
  * Doing mobile last since the desktop styles are done inline via revolution slider
  *
  * using nth-child because setting IDs/classes in revolution slider applies to the
  * content and not the container that has the positioning
+
+ hero images are in here just for positioning since it is the same as the slider.
+ other hero image styles are below.
  */
 #caption-4 {
     display: none;
@@ -356,17 +365,23 @@
 .tp-parallax-wrap:last-of-type {
     left: calc(55% + 166px) !important;
 }
-@media only screen and (max-width: 1050px) {
+.custom-header-bg-merge-title .page-title-wrapper {
+    margin-top: 80px;
+}
+@media only screen and (max-width: 1049px) {
     #slide-1-layer-1 {
         font-size: 14px !important;
     }
     #slide-1-layer-2 {
         font-size: 32px !important;
     }
+    .custom-header-bg-merge-title .page-title-wrapper {
+        margin-top: 0;
+    }
 }
 @media only screen and (max-width: 899px) {
-    .header-slider {
-        margin-top: 45px;
+    .header-slider, .custom-header-bg-merge-title .page-title-wrapper {
+        margin-top: 35px;
     }
 }
 @media only screen and (max-width: 850px) {
@@ -393,8 +408,8 @@
     }
 }
 @media only screen and (max-width: 450px) {
-    .header-slider {
-        margin-top: 100px;
+    .header-slider, .custom-header-bg-merge-title .page-title-wrapper {
+        margin-top: 35px;
     }
     .tp-parallax-wrap {
         left: calc(50% - 122px) !important;
@@ -411,7 +426,7 @@
     }
 }
 @media only screen and (max-width: 399px) {
-    .header-slider {
+    .header-slider, .custom-header-bg-merge-title .page-title-wrapper {
         margin-top: 85px;
     }
 }
