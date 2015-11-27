@@ -271,9 +271,11 @@
 }
 
 /** mobile menu **/
+.header-logo-menu .container {
+    overflow: hidden;
+}
 .logo-type-image {
     position: relative;
-    top: 0;
     z-index: 2;
     overflow: visible;
     height: 0;
@@ -287,6 +289,7 @@
     background-color: #FFF;
     padding: 12px;
     border-radius: 90px;
+    top: -12px;
 }
 .header-layout-3 .mobile-header-menu-control a, .header-layout-3 .mobile-phone a {
     color: #616161;
@@ -334,6 +337,12 @@
 @media only screen and (min-width: 400px) {
     .logo-type-image {
         top: 5px;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .logo-image a img {
+        top: 0;
     }
 }
 
