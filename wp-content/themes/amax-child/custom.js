@@ -1,6 +1,41 @@
 "use strict";
 
 jQuery(function($){
+	$(window).scroll(function(){
+		var breakpoint = 1050;
+		var height = $('.header-top').outerHeight();
+		var position = $(window).scrollTop();
+
+		if(position > height && $(window).innerWidth() < breakpoint) {
+			$('.header-mobile-menu').css({
+				"position": "fixed",
+				"top": "0",
+				"width": "100%"
+			});
+			$('.logo-type-image').css({
+				"position": "fixed",
+				"top": "0px",
+				"left": "calc(50% - 75px)"
+			});
+			$('.header-wrapper').next().css({
+				"margin-top": $('.header-mobile-menu').outerHeight()
+			});
+		} else {
+			$('.header-mobile-menu').css({
+				"position": "",
+				"top": ""
+			});
+			$('.logo-type-image').css({
+				"position": "",
+				"top": "",
+				"left": ""
+			});
+			$('.header-wrapper').next().css({
+				"margin-top": ""
+		});
+		}
+	});
+
 	equal_events();
 	equal_testimonials();
 
