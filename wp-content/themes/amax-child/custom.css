@@ -428,6 +428,17 @@
 }
 
 /** hero images **/
+.page-title {
+    display: inline-block;
+}
+.page-title::after {
+    content: " ";
+    display: block;
+    background-image: url('img/ornament.png');
+    width:120px;
+    height:20px;
+    margin: 16px auto;
+}
 .page .page-title-wrapper.title-margins-xxlarge.title-align-center .container-inner {
     padding: 25vw 0 14vw !important;
 }
