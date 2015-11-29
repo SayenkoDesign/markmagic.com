@@ -1,6 +1,12 @@
 "use strict";
 
 jQuery(function($){
+	$('a.fa-bars').click(function(e) {
+		$('.mobile-header-menu-container').stop(true, true).slideToggle();
+		e.preventDefault();
+		return false;
+	});
+
 	$(window).scroll(function(){
 		var breakpoint = 1050;
 		var height = $('.header-top').outerHeight();
