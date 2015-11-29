@@ -28,7 +28,8 @@
 }
 .header .logo-type-image .logo-menu-wrapper img {
     position: relative;
-    left: -15px;
+    left: 0;
+    width: 100px;
 }
 .header .logo-menu-wrapper .logo-box {
     padding-top: 0;
@@ -97,6 +98,7 @@
     .header .logo-type-image .logo-menu-wrapper img {
         position: relative;
         left: -30px;
+        width: auto;
     }
     .header .header-top {
         font-size: 14px;
@@ -289,7 +291,6 @@
     background-color: #FFF;
     padding: 12px;
     border-radius: 90px;
-    top: -12px;
 }
 .header-layout-3 .mobile-header-menu-control a, .header-layout-3 .mobile-phone a {
     color: #616161;
