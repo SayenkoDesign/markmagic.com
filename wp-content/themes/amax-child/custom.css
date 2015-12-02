@@ -387,9 +387,11 @@
 @media only screen and (max-width: 1049px) {
     #slide-1-layer-1 {
         font-size: 14px !important;
+        line-height: 1 !important;
     }
     #slide-1-layer-2 {
         font-size: 32px !important;
+        line-height: 1 !important;
     }
     .custom-header-bg-merge-title .page-title-wrapper {
         margin-top: 0;
@@ -428,7 +430,7 @@
     #slide-1-layer-2 {
         font-size: 20px !important;
     }
-    #slide-1-layer-12, #why-mark {
+    #slide-1-layer-17, #why-mark {
         font-size: 12px !important;
         padding: 6px 16px !important;;
     }
