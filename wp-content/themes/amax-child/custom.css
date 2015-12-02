@@ -560,6 +560,12 @@ body {
 #get-started .wpb_content_element {
     margin-top: 0;
 }
+#get-started .vc_col-sm-4 {
+    text-align: center;
+}
+#get-started .vc_col-sm-4 .vc_btn3 {
+    display: inline-block;
+}
 @media screen and (min-width: 620px) {
     #cards {
         display: block;
@@ -582,6 +588,9 @@ body {
 @media only screen and (min-width: 768px) {
     #partner-logos .vc_col-xs-6:nth-child(2n+1) {
         clear: none;
+    }
+    #get-started .vc_col-sm-4 {
+        text-align: left;
     }
 }
 /** accordian **/
