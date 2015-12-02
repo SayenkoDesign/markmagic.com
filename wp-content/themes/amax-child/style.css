@@ -828,6 +828,11 @@ q {
  * 6. Primary menu
  *******************************************/
 
+.primary-menu-highlight-active .primary-menu li.current-menu-item > a {
+color:#c3924e !important;
+
+}
+
 .primary-menu {
     display: inline-block;
     vertical-align: middle;
@@ -1449,6 +1454,7 @@ body.uncovering-footer:after {
 .page-title-wrapper.tpl-image .page-title,
 .page-title-wrapper.tpl-parallax .page-title {
     color: inherit;
+    display: none;
 }
 
 .page-title-wrapper.tpl-parallax:before {
@@ -1655,11 +1661,6 @@ body.uncovering-footer:after {
     transition: all 0.15s;
 }
 
-.sidebar-widget.widget_nav_menu .menu li a:hover,
-.sidebar-widget.widget_nav_menu .menu li.current-menu-item a {
-    text-decoration: none;
-    color: #fff;
-}
 
 .sidebar-widget.widget_nav_menu .menu li a:before {
     content: "\e605";

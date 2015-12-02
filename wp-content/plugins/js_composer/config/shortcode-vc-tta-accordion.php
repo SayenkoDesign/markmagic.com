@@ -196,8 +196,8 @@ vc_map( array(
 	         <div class="vc_tta-panel-heading">
 	            <h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left">
 	               <a href="javascript:;" aria-expanded="false" class="vc_tta-backend-add-control">
+	                   <i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i>
 	                   <span class="vc_tta-title-text">' . __( 'Add Section', 'js_composer' ) . '</span>
-	                    <i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i>
 					</a>
 	            </h4>
 	         </div>
