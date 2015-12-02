@@ -191,6 +191,10 @@
 }
 
 /** primary menu **/
+.primary-menu-highlight-active .primary-menu li.current-menu-item > a > .primary-menu-line {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
 .desktop-phone {
     display: none;
 }
