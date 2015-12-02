@@ -43,13 +43,11 @@ jQuery(function($){
 	});
 
 	equal_events();
-	equal_testimonials();
 
 	$(window).resize(function() {
 		var breakpoint = 768;
 		if($(window).innerWidth() < breakpoint) {
 			unset_equal_events();
-			unset_equal_testimonials();
 			return;
 		}
 
@@ -69,22 +67,6 @@ jQuery(function($){
 		});
 
 		$('#events > .wpb_column > .wpb_wrapper').each(function() {
-			$(this).innerHeight(event_height);
-		});
-	}
-
-	function equal_testimonials() {
-		var event_height = 0;
-		$('#testimonials .vc_om-testimonials-items').each(function() {
-			$(this).innerHeight("auto");
-			var h = $(this).innerHeight();
-
-			if(h > event_height) {
-				event_height = h;
-			}
-		});
-
-		$('#testimonials .vc_om-testimonials-items').each(function() {
 			$(this).innerHeight(event_height);
 		});
 	}
