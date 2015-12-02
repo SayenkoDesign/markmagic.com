@@ -111,6 +111,7 @@
     }
     #gform_3 {
         display: inline-block;
+        margin-left: 14px;
     }
     #gform_3 #input_3_1 {
         padding: 14px 28px;
@@ -153,6 +154,7 @@
     }
     #gform_3 {
         display: block;
+        margin-left: 0;
     }
     #gform_3 .gform_body {
         width: auto;
